@@ -91,6 +91,41 @@ The **User** service is a key component of the **MealMate** project, handling us
 ![image](https://github.com/user-attachments/assets/5791b738-e61c-4f73-9099-26759da1157b)
 
 
+## Docker Instructions
 
+If you prefer using Docker for this service, you can pull and run the User Service image directly from Docker Hub.
 
+### Pulling the Image from Docker Hub
+
+1. To pull the image, use the following command:
+    ```bash
+    docker pull rkemon94/user-service:latest
+    ```
+
+### Running the Order Service with Docker
+
+2. Run the User Service service in a Docker container:
+    ```bash
+    docker run --name user-container -p 9093:9093 rkemon94/user-service:latest
+    ```
+
+3. Access the service:
+
+   After running the container, you can access the API on http://localhost:9093.
+
+### Stopping and Removing the Container
+
+- To stop the running container:
+    ```bash
+    docker stop user-container
+    ```
+
+- To remove the container after stopping it:
+    ```bash
+    docker rm user-container
+    ```
+
+## Conclusion
+
+The User-MealMate service is a key component of the MealMate microservices ecosystem, providing user management capabilities that integrate seamlessly with other services like the FoodCatalogue, Order, and RestaurantListing services. By utilizing modern technologies such as Spring Boot and MySQL, this service ensures reliable and efficient handling of user data, authentication, and authorization. With its integration into the overall MealMate architecture through Eureka service discovery, it enables smooth inter-service communication and contributes to a scalable, flexible food-ordering system.
 

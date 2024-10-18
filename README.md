@@ -99,14 +99,14 @@ If you prefer using Docker for this service, you can pull and run the User Servi
 
 1. To pull the image, use the following command:
     ```bash
-    docker pull rkemon94/user-service:latest
+    docker pull rkemon94/user-mealmate:latest
     ```
 
 ### Running the Order Service with Docker
 
 2. Run the User Service service in a Docker container:
     ```bash
-    docker run --name user-container -p 9093:9093 rkemon94/user-service:latest
+    docker run --name user-container -p 9093:9093 rkemon94/user-mealmate:latest
     ```
 
 3. Access the service:
